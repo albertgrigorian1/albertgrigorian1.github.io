@@ -695,7 +695,9 @@ img {
     border-bottom: 4px solid #df0031;
 }
 
-
+.team_box:hover .team_box_shadow {
+    box-shadow: inset  0px 0px 0px 148px rgba(17,17,17,0.80);
+}
 
 .team_box:hover ul {
     display: block;
