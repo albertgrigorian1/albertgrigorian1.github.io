@@ -259,12 +259,14 @@
           
         </div>
         <div class="col-lg-8 wow fadeInLeft delay-06s">
-          <div class="form">
-            <input class="input-text" type="text" name="" value="Dein Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="text" name="" value="Deine E-Mail Adresse *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Deine Nachricht *</textarea>
+          <form class="form" action="https://formsubmit.co/albertgrigorovjan@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Neue Anfrage!">
+            <input type="hidden" name="_captcha" value="false">
+            <input class="input-text" type="text" name="name" placeholder="Dein Name* " required>
+            <input class="input-text" type="text" name="email" placeholder="Deine E-Mail Adresse* " required>
+            <textarea class="input-text text-area" cols="0" rows="0" placeholder="Deine Nachricht* " required></textarea>
             <input class="input-btn" type="submit" value="Senden">
-          </div>
+          </form>
         </div>
       </div>
     </section>
